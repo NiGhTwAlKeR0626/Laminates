@@ -39,7 +39,7 @@ nav a:hover {
 .hero {
     background-image: url(assets/bg1.jpg); 
     height: 300px;
-    color: 76d30c;
+    color: #76d30c;
     display: flex;
     align-items: center;
     justify-content: center;
