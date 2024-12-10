@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-image: url('assets/headdder.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    background-color: #4682b4;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: #5f9ea0;
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.hero {
+    background-image: url(assets/bg1.jpg); 
+    height: 300px;
+    color: #76d30c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.hero h1 {
+    font-family: 'Brush Script MT', cursive ;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 50px;
+    position: relative;
+    animation: fadeIn 5s linear 2s infinite alternate;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+main {
+    padding: 20px;
+    background-color: #e2bbe2;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.content div {
+    position: relative;
+    background-color: #f0e0f0;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 15px;
+}
+
+.content div:hover {
+    transform: scale(1.05);
+    background-color: #ffe4e4;
+}
+
+.content img {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+.content h2 {
+    font-size: 24px;
+    color: #000;
+    background-color: transparent;
+    padding: 10px;
+    position: static;
+    text-align: center;
+    transition: none;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4682b4;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #5f9ea0;
+    animation: wiggle 0.3s ease infinite;
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+form{
+    font-size: 25px;
+}
