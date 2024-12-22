@@ -29,20 +29,19 @@ nav a {
     text-decoration: none;
     color: #fff;
     padding: 10px 15px;
-    background-color: #4682b4;
+    background-color: #bd3636;
     border-radius: 25px;
     transition: background-color 0.3s, transform 0.2s;
 }
 
 nav a:hover {
     background-color: #5f9ea0;
-    transform: scale(1.1); /* Slightly enlarge on hover */
+    transform: scale(1.1); /*enlarge on hover */
 }
 
 .hero {
     background-image: url(assets/bg1.jpg); 
     height: 300px;
-    color: #76d30c;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,7 +81,7 @@ h1 {
 
 .content div {
     position: relative;
-    background-color: #f0e0f0;
+    background-color: #b38bb3;
     padding: 20px;
     margin: 10px;
     flex: 1;
@@ -106,7 +105,7 @@ h1 {
 }
 
 .content h2 {
-    font-size: 24px;
+    font-size: 28px;
     color: #000;
     background-color: transparent;
     padding: 10px;
@@ -128,16 +127,16 @@ h1 {
 }
 
 .button:hover {
-    background-color: #5f9ea0;
+    background-color: #d16868;
     animation: wiggle 0.3s ease infinite;
 }
 
 @keyframes wiggle {
-    0%, 100% {
-        transform: rotate(-3deg);
+    0% {
+        transform: rotate(-4deg);
     }
     50% {
-        transform: rotate(3deg);
+        transform: rotate(4deg);
     }
 }
 
@@ -152,4 +151,46 @@ footer {
 
 form{
     font-size: 25px;
+}
+
+.sidebar {
+    padding: 20px;
+    background-color: #787878;
+    border-left: 2px solid #ccc;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    top: 0;
+    bottom: 0;
+    width: 17%;
+    height: 850px;
+}
+
+.sidebar h2 {
+    margin-top: 20px;
+}
+
+
+.sidebar p{
+    font-size: 21px;
+}
+
+.testimonial, .news, .award {
+    margin-bottom: 20px;
+}
+
+.sidebar img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+aside{
+width: 10%;
+height: auto;
+padding-left: 15px;
+margin-left: 15px;
+float: left;
+font-style: italic;
 }
